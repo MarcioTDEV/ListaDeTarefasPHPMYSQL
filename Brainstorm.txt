@@ -1,0 +1,41 @@
+Objetivo: Criar um sistema de lista de tarefas
+O que o sistema fará: Após realizar o login do usuário, o mesmo poderá adicionar tarefas ao dia, ver as tarefas do dia atual e verificar tarefas anteriores
+(display da home: adicionar tarefa, tarefas do dia)
+
+adicionar tarefa:
+vai adicionar uma nova tarefa ao sistema, a tarefa vai ser encaminhada ao banco e aparecerá na área tarefas do dia
+
+tarefas do dia - funções:
+ver as tarefas, marcar como concluída ou pendente, deletar tarefa
+
+
+funções adicionais do usuário:
+o mesmo poderá encerrar a sessão e voltar à home e deletar a conta;
+
+
+Estrutura:
+Rotas vai direcionar todos os comandos do usuário, tanto logado com deslogado
+UserControl vai estar em contato com UserDao e UserModel para realizar os processos determinados quando o usuário estiver logado
+Control cuidará das ações de exibir a Home principal, cadastrar o usuário iniciando a sessão e logar o mesmo quando retornar
+
+UserModel vai entrar em contato com a DAO para ações no banco e validação de determinados
+
+UserDao vai realizar a ação diretamente no banco, determminada pela Model
+
+Banco de Dados:
+Duas tabelas serão criadas, relacionadas entre si
+User vai ter as informações principais do usuário: id, nome, email e senha
+Tarefas vai receber: id, texto, status e o id do Usuario
+
+//// TRILHA DE DESENVOLVIMENTO:
+v Criar Banco de dados
+v Criar fomulário de login e cadastro
+v funções de login e cadastro com validação de formulário
+v encerrar sessão
+v Criar home do usuário com suas respectivas áreas
+v adicionar funções do menu adicionar tarefa
+v funcionalidade do menu tarefas do dia
+v deletar conta do usuário
+estilizar sistema
+
+- PROJETO CONCLUÍDO!!!

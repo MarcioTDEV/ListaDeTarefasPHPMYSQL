@@ -1,0 +1,105 @@
+/* configrações do modal */
+.modalDeletarConta{
+    position: absolute;
+    top: -100vh;
+    transition: 0.8s;
+    z-index: 1;
+    background-color: teal;
+    color: white;
+    padding: 40px 20px 40px 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+}
+.msgDeletarConta{
+    margin-bottom: 10px;
+}
+.opcoesDeletarConta button{
+    padding: 3px 6px;
+    cursor: pointer;
+}
+.opcoesDeletarConta button a{
+    text-decoration: none;
+    color: #000;
+}
+.botaoFechar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2em;
+    padding: 0 10px 0 0;
+}
+.show{
+    top: 100px;
+    transition: 0.8s;
+}
+
+/* Configurações do header da página */
+.Header_usuario{
+    padding: 50px 0 30px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.Header_usuario a, .deletarConta{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+/* main da home do usuario */
+.Home_usuario{
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 60vh;
+    padding: 20px;
+}
+
+.adicionarTarefa_form{
+    margin-bottom: 30px;
+}
+
+.adicionarTarefa_form input{
+    display: inline;
+}
+.input_AdicionarTarefa{
+    max-width: 200px;
+    min-width: 40%;
+}
+
+/* área geral da home do usuário; onde aparece as tarefas */
+
+.lista_tarefas{
+    list-style-type: none;
+}
+
+.lista_tarefas li{
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.textoTarefa{
+    font-size: 1.5em;;
+    display: inline-block;
+    margin-right: 40px;
+}
+.statusTarefa_display{
+    border: 1px solid white;
+    padding: 5px 10px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.pendente{
+    background-color: brown;
+    color: white;
+}
+.concluida{
+    background-color: rgb(0, 94, 50);
+    color: white;
+}
+
+li form{
+    display: inline-block;
+}

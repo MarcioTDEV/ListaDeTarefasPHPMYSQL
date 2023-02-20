@@ -1,0 +1,48 @@
+*{
+    font-family: monospace;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*estilo geral: todo form terá display block, salvo alguma excessão adicionada posteriormente*/
+form input{
+    display: block;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+
+
+/* estilo aplicado a todo conteudo da primeira página do site, exceto cabecalho */
+.main_container{
+    padding: 20px;
+    min-height: 100vh;
+    background-color: rgb(0, 109, 109);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+}
+
+/* definição da margem do formulário de cadastro */
+.main_form_cadastro{
+    margin-bottom: 30px;
+}
+.Home_site{
+    background-color: rgb(0, 109, 109);
+}
+
+@media(min-width:1013px){
+    .main_container{
+        flex-direction: row;justify-content: center;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .main_forms{
+        min-width: 400px;
+        margin-left: 30px;
+    }
+}
